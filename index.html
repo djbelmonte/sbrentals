@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SB Rentals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>SB Event Rental Calculator</h1>
+
+    <!-- Chair -->
+    <div class="item">
+      <div class="item-row">
+        <label for="chairQty">Chairs (₱15 each)</label>
+        <label class="cover-label"><input type="checkbox" id="chairCover"/> With cover (+₱5)</label>
+      </div>
+      <div class="input-row">
+        <input type="number" id="chairQty" value="0" min="0"/>
+        <button class="photo-btn" data-img="chair.PNG">📷</button>
+      </div>
+    </div>
+
+    <!-- Table 4ft -->
+    <div class="item">
+      <div class="item-row">
+        <label for="table4Qty">4ft Tables (₱120 each)</label>
+        <label class="cover-label"><input type="checkbox" id="table4Cover"/> With cover (+₱20)</label>
+      </div>
+      <div class="input-row">
+        <input type="number" id="table4Qty" value="0" min="0"/>
+        <button class="photo-btn" data-img="table4.PNG">📷</button>
+      </div>
+    </div>
+
+    <!-- Table 6ft -->
+    <div class="item">
+      <div class="item-row">
+        <label for="table6Qty">6ft Tables (₱150 each)</label>
+        <label class="cover-label"><input type="checkbox" id="table6Cover"/> With cover (+₱20)</label>
+      </div>
+      <div class="input-row">
+        <input type="number" id="table6Qty" value="0" min="0"/>
+        <button class="photo-btn" data-img="table6.PNG">📷</button>
+      </div>
+    </div>
+
+    <!-- Kiddie Set -->
+    <div class="item">
+      <div class="item-row">
+        <label for="kiddieSetQty">Kiddie Table & Chair Set (₱200 per set)</label>
+      </div>
+      <div class="input-row">
+        <input type="number" id="kiddieSetQty" value="0" min="0"/>
+        <button class="photo-btn" data-img="kiddie.PNG">📷</button>
+      </div>
+    </div>
+
+    <!-- Tent -->
+    <div class="item">
+      <div class="item-row">
+        <label for="tentQty">Tent 3x3m (₱500 each)</label>
+      </div>
+      <div class="input-row">
+        <input type="number" id="tentQty" value="0" min="0"/>
+        <button class="photo-btn" data-img="tent.PNG">📷</button>
+      </div>
+    </div>
+
+    <!-- Total -->
+    <div class="total">
+      Total Price: <strong>₱<span id="total">0</span></strong>
+    </div>
+
+    <p class="screenshot-note">📸 Take a screenshot and send this to us once you are done!</p>
+  </div>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
